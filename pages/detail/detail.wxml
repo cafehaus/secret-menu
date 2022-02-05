@@ -1,0 +1,25 @@
+<view class="view-detail">
+  <image class="img" src="{{drink.img}}" mode="widthFix" />
+  <view class="title">{{drink.name}}</view>
+  <view class="tag-box">
+    <text class="tag" wx:for="{{drink.tags}}" wx:key="index">{{item}}</text>
+  </view>
+
+  <view class="sub-title">饮品原料：</view>
+  <view class="recipe">{{drink.recipe}}</view>
+
+  <view class="sub-title">点单姿势：</view>
+  <view class="tips-box">
+    <view class="tips-item" wx:for="{{drink.tips}}" wx:key="index">
+      <view class="barista">
+        <image src="../../images/starbucks.png" />
+        <view class="tip-content">{{item.barista}}</view>
+      </view>
+      <view class="you">
+        <view class="tip-content">{{item.you}}</view>
+        <image src="../../images/gravatar.png" />
+      </view>
+    </view>
+  </view>
+
+</view>

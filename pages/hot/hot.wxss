@@ -1,0 +1,3 @@
+.view-hot {
+  overflow: hidden;
+}

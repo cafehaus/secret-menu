@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/cold/cold",
+    "pages/hot/hot",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "秘密菜单",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-on.png"
+      },
+      {
+        "pagePath": "pages/cold/cold",
+        "text": "冰饮",
+        "iconPath": "images/cold.png",
+        "selectedIconPath": "images/cold-on.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热饮",
+        "iconPath": "images/hot.png",
+        "selectedIconPath": "images/hot-on.png"
+      }
+    ],
+    "color": "#333",
+    "selectedColor": "#333",
+    "borderStyle": "white"
+  },
+  "usingComponents": {
+    "drink-item": "components/drink-item/drink-item"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

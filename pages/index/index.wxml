@@ -1,0 +1,3 @@
+<view class="view-index">
+  <drink-item wx:for="{{drinkList}}" wx:key="index" drink="{{item}}" />
+</view>

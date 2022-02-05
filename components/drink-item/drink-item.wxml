@@ -1,0 +1,13 @@
+<view class="view-drink" bindtap="goDetail" data-info="{{drink}}">
+  <!-- 图片 -->
+  <image class="img" src="{{drink.img}}" mode="aspectFill" />
+
+  <!-- 饮品 -->
+  <view class="content">
+    <text class="title">{{drink.name}}</text>
+    <!-- 标签 -->
+    <view class="tag-box">
+      <text class="tag" wx:for="{{drink.tags}}" wx:key="index">{{item}}</text>
+    </view>
+  </view>
+</view>
